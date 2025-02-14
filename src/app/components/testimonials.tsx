@@ -39,7 +39,7 @@ export function Testimonials() {
 }
 
 function TestimonialCard({
-
+ quote,
   name,
   role,
 
@@ -51,7 +51,7 @@ function TestimonialCard({
 }) {
   return (
     <div className="bg-gray-700 rounded-lg p-6">
-      <blockquote className="text-gray-300 mb-6">{`"{quote}"`}</blockquote>
+      <blockquote className="text-gray-300 mb-6">{quote}</blockquote>
       <div className="flex items-center">
         <div>
           <div className="font-semibold text-white">{name}</div>
